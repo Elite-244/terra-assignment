@@ -31,13 +31,13 @@
 
            <input type="submit" value="submit">
         </fieldset>
-        <div id="error-msg" style="display: none;">provide require info!</div><br><br>
+        <div id="error-msg">check</div><br><br>
         <div id="sucess" style="display: none;">sucessfully submitted </div>
     
     </form> 
     <script>
         var form= document.getElementById('terraform');
-        form.addEventListener( 'submit', (e)=>{
+        form.addEventListener('submit', (e)=>{
             e.preventDefault();
             var fullname= document.getElementById ('fullnames').value;
             var email= document.getElementById ('email').value;
@@ -76,7 +76,7 @@
 
 
 
-<!-- <form id="myForm">
+<form id="myForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"><br><br>
     
@@ -133,4 +133,4 @@
     }
     </script>
     
-     -->
+     
