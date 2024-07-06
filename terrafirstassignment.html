@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.css">
     <title>assignment1</title>
 </head>
 <body>
-    <form id="terraform">
-        <fieldset>
-            <legend>BIODATA</legend>
+    <form id="terraform" action="" method="get">
+        <fieldset style="margin: 2px;">
+            <legend style="color: aquamarine;display: inline-flexbox;">BIODATA</legend><br><br>
 
-            <label for="fullnames">FULLNAME</label>
-            <input type="text" name="fullnames" id="fullnames"required /><br><br>
+            <label for="fullnames" style="color: antiquewhite; margin-left: 20px;">FULLNAME</label>
+            <input type="text" name="fullnames" id="fullnames" /><br><br>
             
-            <label for="emails">EMAIL</label>
-            <input type="email" name="email"require /><br><br>
+            <label for="emails" style="color: antiquewhite; margin-left: 20px;">EMAIL</label>
+            <input type="email" id="email" name="email" /><br><br>
 
-            <label for="phonenumber">PHONE NUMBER</label>
-            <input type="tel" name="phonenumber"><br><br>
+            <label for="phonenumber"style="color: antiquewhite; margin-left: 20px;">PHONE NUMBER</label>
+            <input type="tel" id="phonenumber" name="phonenumber"><br><br>
           
 
-            <label for="gender">GENDER</label>
+            <label for="gender"style="color: antiquewhite; margin-left: 20px;">GENDER</label>
            <select name="gender" id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="male"style="color: antiquewhite; margin-left: 20px;">Male</option>
+            <option value="female"style="color: antiquewhite; margin-left: 20px; ">Female</option>
            </select required><br><br>
 
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password"required ><br><br>
+            <label for="password"style="color: antiquewhite; margin-left: 20px;">PASSWORD</label>
+            <input type="password" id="password" name="password" ><br><br>
 
-           <input type="submit" value="submit">
+           <input type="submit" id="submit" value="submit"style="color: antiquewhite; margin-left: 20px;">
+          
         </fieldset>
         <div id="error-msg">check</div><br>
         <div id="sucess" style="display: none;">sucessfully submitted </div>
@@ -38,12 +40,13 @@
     <script>
         var form= document.getElementById('terraform');
         form.addEventListener('submit', (e)=>{
-            e.preventDefault();
+        e.preventDefault();
             var fullname= document.getElementById ('fullnames').value;
             var email= document.getElementById ('email').value;
             var phonenumber= document.getElementById ('phonenumber').value;
             var gender= document.getElementById ('gender').value;
             var password= document.getElementById ('password').value;
+            
 
             if(fullname===''|| email===''|| phonenumber===''|| gender===''|| password===''){
                document.getElementById('error-msg').innerHTML='Please fill the required';

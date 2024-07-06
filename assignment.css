@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(130, 154, 154);
+    
+}
+#fullnames{
+    padding: 2px;
+    width: 95%;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+   border-radius: 2px;
+   
+}
+#email{
+    padding: 2px;
+    width: 95%;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+   border-radius: 2px;
+   
+}
+#phonenumber{
+    padding: 2px;
+    width: 60%;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+   border-radius: 2px;
+}
+#gender{
+    font-weight: bold;
+}
+#password{
+    padding: 2px;
+    width: 50%;
+     padding-left: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+   border-radius: 2px;
+   
+}
+#submit{
+    width: 20%;
+    position: relative; 
+    padding-left: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+   border-radius: 2px;
+   margin-left: 30px;
+   
+}
